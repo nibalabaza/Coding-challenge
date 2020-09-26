@@ -1,4 +1,5 @@
 import React from 'react';
+import '../css/movie.css';
 
 class Movie extends React.Component {
 
@@ -24,10 +25,10 @@ class Movie extends React.Component {
      render() {
         return (
           <div>
-               <ul>
-                    {this.state.movies.map((movie,i)=>
-                <li></li>)}
-                </ul>
+               <div className="control-container">
+                    {this.state.movies.map((movie)=>
+                    <div><img className="movies-img" src={`https://image.tmdb.org/t/p/w500/${movie.backdrop_path}`}/></div> )}
+                </div>
           </div>
         );
     }
@@ -36,4 +37,3 @@ class Movie extends React.Component {
 export default Movie;
 
 
-{/* <img src= `https://image.tmdb.org/t/p/w500/${movie.backdrop_path}`/> */}

@@ -1,4 +1,5 @@
 import React from 'react';
+import '../css/series.css';
 
 class Series extends React.Component {
 
@@ -23,10 +24,13 @@ class Series extends React.Component {
      render() {
         return (
           <div>
-              <ul>
+              <div className="control-container">
                     {this.state.series.map((serie,i)=>
-                <li>{serie.name}</li>)}
-                </ul>
+                <div><img className="series-img" src={`https://image.tmdb.org/t/p/w500/${serie.backdrop_path}`}/></div>
+               
+                
+                )}
+                </div>
           </div>
         );
     }

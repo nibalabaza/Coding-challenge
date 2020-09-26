@@ -14,14 +14,16 @@ class Home extends React.Component {
      render() {
         return (
           <div className= "container">
-            <section>
+            <section class="control-section">
                 <div className="control-warper">
-               <p>Home  |</p>
-               <p>Terms and conditions  |</p>
-               <p>Privicy Policy  |</p>
-               <p>Collection Statement  |</p>
-               <p>Help  |</p>
-               <p>Manege Account  |</p>
+                <ul>
+               <li>Home  |</li>
+               <li>Terms and conditions  |</li>
+               <li>Privicy Policy  |</li>
+               <li>Collection Statement  |</li>
+               <li>Help  |</li>
+               <li>Manege Account  |</li>
+                </ul>
                </div>
                <div  className="control-text">
                <p>Copyright @ 2016 Demo Streaming. All rights reserved</p>

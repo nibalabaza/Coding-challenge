@@ -1,20 +1,34 @@
 .container{
+   width: 100%;
     background-color: black;
+}
+.control-section{
+   padding:50px 100px; 
 }
 .control-warper{
    width:100%;
     display: flex;
-    padding-left: 10%;
     color: grey;
-}
 
+    
+}
+.control-warper ul { 
+   list-style:none; 
+   display:flex; 
+   padding:0; 
+   margin:0 ; 
+}
+.control-waper ul li { 
+   margin-right:5px; 
+}
 .control-text{
     width: 100%;
     color: grey;
+    text-align:left;
  }
 
  .social-store {
-   width: 100%;
+   width:100%; 
    display: flex;
    justify-content: space-between;
    padding: 100px 50px
