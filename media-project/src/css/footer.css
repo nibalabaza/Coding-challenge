@@ -2,25 +2,36 @@
     background-color: black;
 }
 .control-warper{
-    width: 100%;
+   width:100%;
     display: flex;
     padding-left: 10%;
-}
-
- .control-warper p{
-   color: grey;
-   padding-left: 1%;
-}
-
-.control-text p{
     color: grey;
-    float: left;
-    padding-left: 11%;
+}
+
+.control-text{
+    width: 100%;
+    color: grey;
+ }
+
+ .social-store {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   padding: 100px 50px
+
+ } 
+ .social-img {
 
  }
- .social-img div{
-    display: flex;
- }
- .store-img div{
-    display: flex;
+
+ .social-child {
+   height: 50px;
+   width: 50px;
+   margin: 0 20px;
+ } 
+
+ .store-child {
+  
+   width: 150px;
+   margin : 0 20px;
  }

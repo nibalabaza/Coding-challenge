@@ -27,22 +27,20 @@ class Home extends React.Component {
                <p>Copyright @ 2016 Demo Streaming. All rights reserved</p>
                </div>
             </section>  
-            <section>
-                
-            </section>
-            <section>
+           
+            <section className= "social-store">
                 <div className="social-img">
-                    <img src="../../assets/social/facebook-white.svg" alt=""/>
-                    <img src="../../assets/instagram-white.svg" alt=""/>
-                    <img src="../../assets/twitter-white.svg" alt=""/>
+                    <img className="social-child" src="/assets/social/facebook-white.svg" alt=""/>
+                    <img className="social-child" src="/assets/social/instagram-white.svg" alt=""/>
+                    <img className="social-child" src="/assets/social/twitter-white.svg" alt=""/>
                 </div>
                 <div className="store-img">
-                    <img src="../../assets/store/app-store.svg" alt=""/>
-                    <img src="../../assets/store/app-store.svg" alt=""/>
-                    <img src="../../assets/store/app-store.svg" alt=""/>
+                    <img className="store-child" src="/assets/store/app-store.svg" alt=""/>
+                    <img className="store-child" src="/assets/store/play-store.svg" alt=""/>
+                    <img className="store-child" src="/assets/store/play-store.svg" alt=""/>
                 
                 </div>
-                <div></div>
+                
             </section>
           </div>
         );

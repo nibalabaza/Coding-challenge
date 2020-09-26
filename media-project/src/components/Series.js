@@ -10,13 +10,13 @@ class Series extends React.Component {
     }
 
     componentDidMount = () =>{
-        fetch("https://api.themoviedb.org/3/movie/550?api_key=37e2edabd3d3cef17f9c9cb9e95c67a3")
+        fetch("https://api.themoviedb.org/3/discover/tv?api_key=1881edab174e49d70809ac509b38c4a5")
         .then(response => {
             return response.json();
         })
         .then((data) => {
               console.log(data);
-              this.setState({series : data});
+              this.setState({series : data.results});
         })
     }
 
@@ -25,7 +25,7 @@ class Series extends React.Component {
           <div>
               <ul>
                     {this.state.series.map((serie,i)=>
-                <li>{serie}</li>)}
+                <li>{serie.name}</li>)}
                 </ul>
           </div>
         );

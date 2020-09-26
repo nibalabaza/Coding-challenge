@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './Header';
 import Footer from './Footer';
+import '../css/home.css';
 
 
 class Home extends React.Component {
@@ -28,12 +29,14 @@ class Home extends React.Component {
             
             <section>
                 <Header></Header>
-            <div>
+            <div className="home-container">
             <ul>
                 {this.state.movies.map(movie=>
                 <li>{movie.name} </li>)}
-                <img src="../../assets/placeholder.png" onClick={()=>this.props.history.push('/Movies')}></img>
-                <img src="../../assets/placeholder.png" onClick={()=>this.props.history.push('/Series')}></img>
+                <div className= "image-box">
+                <img className="image-box1" src="/assets/placeholder.png" onClick={()=>this.props.history.push('/movies')}></img>
+                <img className="image-box2" src="/assets/placeholder.png" onClick={()=>this.props.history.push('/series')}></img>
+                </div>
                 </ul>
                 
             </div>

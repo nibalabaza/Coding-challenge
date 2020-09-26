@@ -1,0 +1,26 @@
+.home-container {
+    height: 500px;
+}
+
+.image-box {
+   display: flex;
+   justify-content: flex-start;
+   padding: 20PX;
+    height: 200px;
+    width: 200px;
+}
+
+.image-box1{
+    width: 80%;
+   
+    background-color: black;
+    margin-right: 30px;
+}
+
+.image-box2{
+    width: 80%;
+  
+    background-color: black;
+
+}
+

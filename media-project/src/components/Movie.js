@@ -11,22 +11,22 @@ class Movie extends React.Component {
     }
 
     componentDidMount = () =>{
-        fetch("https://api.themoviedb.org/3/movie/550?api_key=37e2edabd3d3cef17f9c9cb9e95c67a3")
+        fetch("https://api.themoviedb.org/3/discover/movie/?api_key=1881edab174e49d70809ac509b38c4a5")
         .then(response => {
             return response.json();
         })
         .then((data) => {
               console.log(data);
-              this.setState({movies : data});
+              this.setState({movies : data.results});
         })
     }
 
      render() {
         return (
           <div>
-              <ul>
-                    {this.state.movies.map(movie=>
-                <li>{movie}</li>)}
+               <ul>
+                    {this.state.movies.map((movie,i)=>
+                <li></li>)}
                 </ul>
           </div>
         );
@@ -34,3 +34,6 @@ class Movie extends React.Component {
 }
 
 export default Movie;
+
+
+{/* <img src= `https://image.tmdb.org/t/p/w500/${movie.backdrop_path}`/> */}
