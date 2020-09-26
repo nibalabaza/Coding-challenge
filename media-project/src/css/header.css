@@ -1,0 +1,26 @@
+
+.head-section1 {
+   width: 100%;
+   height: 80px;
+   background-color: rgb(73, 154, 240);
+}
+.head-section2 {
+   width: 100%;
+   height: 80px;
+   background-color:rgb(33, 33, 33);
+  
+}
+
+.control-title1 {
+   color: white;
+   float: left;
+   padding-left: 10%;
+   font-size: 30px;
+   
+}
+
+.control-title2 {
+   color: white;
+   float: left;
+   font-size: 30px;
+}

@@ -1,0 +1,26 @@
+.container{
+    background-color: black;
+}
+.control-warper{
+    width: 100%;
+    display: flex;
+    padding-left: 10%;
+}
+
+ .control-warper p{
+   color: grey;
+   padding-left: 1%;
+}
+
+.control-text p{
+    color: grey;
+    float: left;
+    padding-left: 11%;
+
+ }
+ .social-img div{
+    display: flex;
+ }
+ .store-img div{
+    display: flex;
+ }
