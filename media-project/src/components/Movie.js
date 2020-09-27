@@ -6,7 +6,9 @@ class Movie extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            movies :[]
+            movies :[],
+            loading: true,
+            error: false
         }
 
     }
@@ -18,16 +20,41 @@ class Movie extends React.Component {
         })
         .then((data) => {
               console.log(data);
-              this.setState({movies : data.results});
+              this.setState({movies : data.results, loading: false });
+        })
+        .catch(error => {
+            console.log("Error", error)
+            this.setState({
+                error: true
+            })
         })
     }
 
      render() {
+        if (this.state.error) {
+            return <div>Error</div>;
+          }
+        if (this.state.loading) {
+            return <div>loading...</div>;
+          }
+    
         return (
+
           <div>
+              
                <div className="control-container">
-                    {this.state.movies.map((movie)=>
-                    <div><img className="movies-img" src={`https://image.tmdb.org/t/p/w500/${movie.backdrop_path}`}/></div> )}
+                    {this.state.movies.map((movie)=>{ //to change the length of the title of the movie 
+                        let {title} = movie
+                        if (title.length > 40) {
+                            title = title.substr(0,37)+"..."
+                        }
+                    return( 
+                    <div> 
+                         <img className="movies-img" src={`https://image.tmdb.org/t/p/w500/${movie.backdrop_path}`}/> 
+                         <div className="movies-title">{title}</div>
+                    </div> 
+                    )
+                })}
                 </div>
           </div>
         );
