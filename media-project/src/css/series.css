@@ -1,3 +1,10 @@
+.series-body{
+    margin: 50px;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .control-container {
 height: 100%;
 width: 100%;
@@ -9,4 +16,15 @@ justify-content: space-around;
 .series-img {
     height: 200px;
     
+}
+
+.series-title {
+    font-weight: bold;
+    margin-top: 3px;
+    margin-bottom: 20px
+}
+
+.error {
+    margin : 100px 100px;
+    font-size : 30px
 }

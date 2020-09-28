@@ -1,27 +1,51 @@
 .home-container {
     height: 500px;
+    display: flex;
+    margin: 50px 90px;
+    
 }
 
 .image-box {
-    display: flex;
+/*     
     justify-content: flex-start;
+    flex-direction: column;
     padding: 20PX;
     height: 200px;
     width: 200px;
-    position: absolute;
+    position: absolute; */
+    
 }
 
 .image-box1{
-    width: 80%;
-   
+    height: 280px;
+    width: 200px;
     background-color: black;
-    margin-right: 30px;
+    cursor : pointer;
+    
 }
 
 .image-box2{
-    width: 80%;
-  
+    height: 280px;
+    width: 200px;
     background-color: black;
-
+    cursor: pointer
+}
+.nest {
+    position : relative
 }
 
+.print {
+  position : absolute;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%)
+}
+
+.home-title {
+    font-weight: bold;
+    font-size : 20px
+
+}

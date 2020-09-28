@@ -14,15 +14,15 @@ class Home extends React.Component {
      render() {
         return (
           <div className= "container">
-            <section class="control-section">
+            <section className="control-section">
                 <div className="control-warper">
                 <ul>
-               <li>Home  |</li>
-               <li>Terms and conditions  |</li>
-               <li>Privicy Policy  |</li>
-               <li>Collection Statement  |</li>
-               <li>Help  |</li>
-               <li>Manege Account  |</li>
+               <li>Home<span className="item-footer">|</span></li>
+               <li>Terms and conditions<span className="item-footer">|</span></li>
+               <li>Privicy Policy<span className="item-footer">|</span></li>
+               <li>Collection Statement<span className="item-footer">|</span></li>
+               <li>Help<span className="item-footer">|</span></li>
+               <li>Manege Account<span className="item-footer">|</span></li>
                 </ul>
                </div>
                <div  className="control-text">
@@ -39,7 +39,7 @@ class Home extends React.Component {
                 <div className="store-img">
                     <img className="store-child" src="/assets/store/app-store.svg" alt=""/>
                     <img className="store-child" src="/assets/store/play-store.svg" alt=""/>
-                    <img className="store-child" src="/assets/store/play-store.svg" alt=""/>
+                    <img className="store-child" src="/assets/store/windows-store.svg" alt="" height= "45"/>
                 
                 </div>
                 

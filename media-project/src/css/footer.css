@@ -5,18 +5,21 @@
 .control-section{
    padding:50px 100px; 
 }
-.control-warper{
-   width:100%;
-    display: flex;
-    color: grey;
-   
-    
-}
+/* .control-warper{
+   width:100%;   
+} */
+
 .control-warper ul { 
    list-style:none; 
    display:flex; 
    padding:0; 
    margin:0 ; 
+   color: grey;
+}
+
+.item-footer {
+   margin-left : 10px;
+   margin-right : 10px;
 }
 .control-waper ul li { 
    margin-right:5px; 

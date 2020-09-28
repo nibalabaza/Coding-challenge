@@ -16,7 +16,7 @@ class Home extends React.Component {
                <div className= "title">
                 <h2 className="control-title1">DEMO Streaming</h2>
                 </div>
-                <div classNam= "btn">
+                <div className= "btn">
                     <button className="login-btn">Login</button>
                     <button className="trial-btn">Start your free trial</button>
                 </div>
